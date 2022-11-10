@@ -1,0 +1,1 @@
+Email2AT is a hosted workflow engine that triggers a series of actions each time Email2AT receives an email message. The actions range from parsing the contents of the received email message to querying and creating objects in Autotask. Email2AT intelligently creates Autotask tickets for alerts received from RMM tools and other automated systems.

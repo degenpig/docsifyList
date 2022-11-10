@@ -1,0 +1,12 @@
+.scroll-to-top {
+    color: var(--text-color-secondary) !important;
+    height: 2.5em !important;
+    width: 2.5em !important;
+    line-height: 2.25em !important;
+}
+
+@media screen and (max-width: 768px) {
+    .scroll-to-top {
+        display: none !important;
+    }
+}

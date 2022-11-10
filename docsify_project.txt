@@ -1,0 +1,29 @@
+We are working to build the documentation for our B2B SaaS application. We have decided to use https://docsify.js.org/ as the package to manage the documentation site, but we have a few changes we need made to the JavaScript/CSS of our site.
+
+Specifically, we are looking for help to make the following changes:
+
+Item 1: Sidebar Behavior
+
+Current behavior:
+- The sidebar navigation displays collapsed on initial page load.
+
+Requested Change:
+- The sidebar navigation should display as expanded on initial page load. All sidebar navigation items should be visible when the site is first loaded.
+
+Item 2: Click-To-Copy Tag
+
+Current Behavior:
+- We currently have a custom HTML tag that stylizes its content to show that the user can click to copy the contents to the user's clipboard. When the user hovers the text, a tooltip is displayed that says "Click to Copy to Clipboard". When the user clicks the text, the text is copied to their clipboard, and the tooltip text does not change.
+
+Requested Change:
+- We need your help make the tooltip text change to "Copied!" when the user clicks on the text and copies it to their clipboard.
+
+I am also looking for your help to discuss the following needs and provide some direction related to:
+- How can we create a second Docsify site that is not publicly accessible? We would like to have a place for internal articles and documentation for our internal business processes.
+- Is there a way to easily modify Docsify without needing to use git? I would like to empower some of my team to use Docsify on their own, and it may be easier for them if they can make changes without using git. I would like to hear your thoughts.
+
+I will fork our Gitlab.com repository and invite you as a contributor. You will need to make your changes and submit them to this forked repository. I will handle merging your changes into our original repo and I will also handle deploying your changes to our production site.
+
+These tasks are preliminary. I anticipate that we will need further help with Docsify and possibly with our Angular SaaS app in the future. I would like to hire someone who can remain available for other small tasks as they come up.
+
+https://www.loom.com/share/2a240a13abd845109fc0529551cae86b

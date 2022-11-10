@@ -1,0 +1,269 @@
+.sidebar {
+    /* Reorder sidebar */
+    overflow: hidden;
+    background-color: var(--bg-color-secondary);
+    font-family: var(--font-family-text);
+}
+
+.sidebar .search {
+    position: absolute;
+    width: 100%;
+    max-height: 100%;
+    top: 160px;
+    border-top: 1px solid #eee;
+    z-index: 10;
+    background-color: var(--bg-color-primary);
+    overflow-y: auto;
+    /* make only the search results scrollable */
+    padding: var(--unit) 0;
+}
+
+.sidebar .search::-webkit-scrollbar {
+    width: 2px;
+    /* width of the entire scrollbar */
+}
+
+.sidebar .search::-webkit-scrollbar-thumb {
+    border-radius: 20px;
+    /* roundness of the scroll thumb */
+    border: 3px solid var(--text-color-secondary);
+    /* creates padding around scroll thumb */
+}
+
+.sidebar .search .search-keyword,
+.sidebar .search a:hover {
+    color: var(--theme-color-primary);
+}
+
+.sidebar .search input {
+    font-weight: 500;
+    padding-left: calc(var(--unit) * 5);
+}
+
+.sidebar .search input:focus {
+    border: 1px solid white !important;
+    box-shadow: none !important;
+}
+
+.sidebar .search .matching-post {
+    padding: calc(var(--unit) * 2.5);
+}
+
+.sidebar .search .matching-post h2 {
+    font-size: 14px;
+    margin: 10px 0 0 0;
+    color: var(--text-color-secondary);
+}
+
+.sidebar .search .matching-post p {
+    margin: 10px 0 10px 0;
+    color: var(--text-color-secondary);
+}
+
+.sidebar h1 {
+    position: absolute;
+    top: 30px;
+    left: 0;
+    width: 100%;
+}
+
+.sidebar .sidebar-nav {
+    position: absolute;
+    width: calc(100% - calc(var(--unit) * 5));
+    top: 220px;
+    overflow-y: auto;
+    /* make only the nav scrollable */
+    height: calc(90% - 168px);
+    /* top (130px) + toggle (38px) */
+    box-sizing: content-box;
+    padding-left: calc(var(--unit) * 5);
+}
+
+.sidebar .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sidebar .logo img {
+    height: 100px;
+    /*margin-right: 40px;*/
+}
+
+/* Reorder sidebar */
+
+/* For collapsing all but current page */
+
+.sidebar .collapse ul {
+    display: none;
+}
+
+.sidebar .open ul {
+    display: block;
+}
+
+.sidebar-nav>ul>li ul {
+    display: block;
+}
+
+/* .sidebar-nav>ul>li ul {
+    display: block !important;
+} */
+
+.sidebar li {
+    margin: 0;
+}
+
+.sidebar li a {
+    height: calc(var(--unit) * 4);
+}
+
+/* Top-level ul */
+
+.sidebar .sidebar-nav>ul {
+    margin: 0;
+}
+
+.sidebar .sidebar-nav>ul>li:nth-child(1) {
+    margin-top: calc(var(--unit) * 3);
+}
+
+.sidebar .sidebar .sidebar-nav>ul>li {
+    margin: var(--unit) 0;
+}
+
+.sidebar .sidebar .sidebar-nav>ul>li>a {
+    font-weight: 600 !important;
+    color: var(--text-color-primary) !important;
+}
+
+.sidebar .sidebar .sidebar-nav>ul>li a {
+    font-weight: 500;
+    color: var(--text-color-secondary);
+}
+
+.sidebar .sidebar .sidebar-nav>ul>li a.sidebar-home {
+    font-weight: 500 !important;
+    color: var(--text-color-secondary) !important;
+    margin-left: calc(var(--unit) * -2);
+}
+
+.sidebar .sidebar .sidebar-nav>ul>li a.sidebar-home .sidebar-back-icon {
+    margin: 0 2px -2px 0;
+}
+
+.sidebar .sidebar .sidebar-nav>ul>li>p {
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 22px;
+    color: var(--text-color-primary);
+}
+
+/* Sub-level ul */
+
+.sidebar .sidebar-nav>ul ul {
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+    margin: 0;
+}
+
+.sidebar .sidebar-nav>ul ul>li {
+    padding-left: 15px;
+}
+
+.sidebar .sidebar-nav>ul ul>li>a {
+    font-size: 14px;
+}
+
+/* For highlighting the currently selected page */
+
+.sidebar ul li.active>a {
+    border-right: calc(var(--unit) / 2.25) solid;
+    color: var(--theme-color-primary) !important;
+    font-weight: 600;
+}
+
+/* Provide some differentiation between section headings and sub-pages in the sidebar */
+
+.sidebar .section-link {
+    font-style: italic;
+}
+
+.sidebar ul li a {
+    font-size: 14px;
+}
+
+.sidebar ul li a:hover {
+    color: var(--theme-color-primary);
+}
+
+.sidebar .app-sub-sidebar li:before {
+    display: none;
+}
+
+.sidebar .search .clear-button {
+    cursor: pointer;
+}
+
+.sidebar-toggle {
+    background: none;
+    top: 6.3rem;
+    left: calc(300px + 1rem);
+    cursor: pointer;
+    width: 1.5rem;
+    height: 1.5rem;
+    padding: 0;
+    transition: left 0.25s ease-out;
+}
+
+.sidebar-toggle :hover {
+    opacity: 0.8;
+}
+
+.sidebar-toggle .sidebar-toggle-button:hover {
+    opacity: 1;
+}
+
+.sidebar-toggle span {
+    background-color: var(--theme-color-primary);
+    height: calc(var(--unit) / 2.25);
+    width: 1.5rem;
+    position: absolute;
+    left: 0;
+    margin: 0;
+    transform-origin: 0;
+    border-radius: 1px;
+}
+
+.sidebar-toggle span:nth-child(1) {
+    top: 0;
+}
+
+.sidebar-toggle span:nth-child(2) {
+    top: 0.5rem;
+}
+
+.sidebar-toggle span:nth-child(3) {
+    top: 1rem;
+}
+
+body.close .sidebar-toggle {
+    transition: left 0.25s ease-out;
+    width: 1.5rem;
+    height: 1.5rem;
+    left: 1.5rem;
+}
+
+body.close .sidebar-toggle span {
+    transform-origin: center;
+}
+
+@media screen and (max-width: 768px) {
+    body .sidebar-toggle {
+        left: 1rem;
+    }
+
+    body.close .sidebar-toggle {
+        left: calc(300px + 1.5rem);
+    }
+}

@@ -1,0 +1,57 @@
+.page_toc {
+    margin-top: 40px;
+    border: none !important;
+}
+.page_toc p.title {
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    margin-top: 7px !important;
+    padding-bottom: 10px !important;
+    color: var(--text-color-primary);
+}
+
+.page_toc a {
+    font-weight: 500 !important;
+    font-size: 14px !important;
+    color: var(--text-color-secondary) !important;
+    line-height: calc(var(--unit) * 4) !important;
+}
+.page_toc a span {
+    color: var(--text-color-secondary) !important;
+}
+
+.page_toc a:hover span {
+    color: var(--theme-color-primary) !important;
+}
+
+.page_toc div[class^="lv"] {
+    margin-left: 0 !important;
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.page_toc div.active {
+    border-left: calc(var(--unit) * 1 / 3) solid;
+    border-left-color: var(--theme-color-primary) !important;
+    padding-left: calc(16px - var(--unit) * 1 / 3);
+}
+.page_toc div.active a span {
+    color: var(--theme-color-primary) !important;
+    font-weight: 600;
+}
+
+.page_toc .lv3 a {
+    padding-left: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+aside.nav.nothing {
+    width: var(--toc-width) !important; /* Always preserve space for ToC */
+}
+
+@media screen and (max-width: 1300px) {
+    .page_toc {
+        display: none;
+    }
+}

@@ -1,0 +1,31 @@
+.ui-kbd {
+    color: white;
+    background-color: black;
+}
+
+.ui-type {
+    border-bottom-color: var(--color-gray);
+    border-bottom-style: dashed;
+    border-bottom-width: thin;
+    color: var(--color-gray);
+    font-family: var(--font-family-code);
+    font-weight: bold;
+}
+
+.ui-element,
+.ui-entity,
+.ui-menu-item {
+    font-weight: bold;
+    font-variant-caps: small-caps;
+}
+
+.ui-button {
+    color: green;
+}
+
+
+/*kbd: 'ui-kbd',*/
+/*btn: 'ui-button',*/
+/*type: 'up-type',*/
+/*field: 'ui-field',*/
+/*menu: 'ui-menu',*/
